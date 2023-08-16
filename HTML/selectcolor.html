@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Picker and Background Update</title>
+</head>
+<body>
+  <h1>Choose a Color</h1>
+  <select id="colorPicker">
+    <option value="">Select a color</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="yellow">Yellow</option>
+    <option value="orange">Orange</option>
+    <option value="purple">Purple</option>
+  </select>
+  <button onclick="updateBackgroundColor()">Apply Color</button>
+
+  <script>
+    function updateBackgroundColor() {
+      const colorPicker = document.getElementById('colorPicker');
+      const selectedColor = colorPicker.value;
+
+      // Perform validation to check if a valid color is selected
+      if (!isValidColor(selectedColor)) {
+        alert("Please select a valid color.");
+        return;
+      }
+
+      // Set the background color of the body to the selected color
+      document.body.style.backgroundColor = selectedColor;
+    }
+
+    function isValidColor(color) {
+      const validColors = ["red", "blue", "green", "yellow", "orange", "purple"];
+      return validColors.includes(color);
+    }
+  </script>
+</body>
+</html>

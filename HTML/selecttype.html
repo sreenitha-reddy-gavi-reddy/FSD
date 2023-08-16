@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Option with Background Color</title>
+</head>
+<body>
+  <h1>Select Color Example</h1>
+  <p>Select a color:</p>
+
+  <select id="colorSelect">
+    <option value="white">White</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <!-- Add more color options as needed -->
+  </select>
+
+  <div id="displayArea">
+    <p>This is the content where the selected color will be displayed.</p>
+  </div>
+
+  <script>
+    // Get references to the select element and the div where the color will be displayed
+    const selectElement = document.getElementById('colorSelect');
+    const displayArea = document.getElementById('displayArea');
+
+    // Function to update the background color when the selection changes
+    function updateBackgroundColor() {
+      const selectedColor = selectElement.value;
+      displayArea.style.backgroundColor = selectedColor;
+    }
+
+    // Add an event listener to the select element to call the updateBackgroundColor function
+    selectElement.addEventListener('change', updateBackgroundColor);
+
+    // Call the function once on page load to display the initial selected color
+    updateBackgroundColor();
+  </script>
+</body>
+</html>

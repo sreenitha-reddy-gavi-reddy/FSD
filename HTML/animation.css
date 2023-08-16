@@ -1,0 +1,16 @@
+div{
+	height: 200px;width: 200px;background-color: grey;
+	animation-name: ex;
+	animation-duration: 6s;
+	position: relative;
+}
+@keyframes ex{
+	/*from{background-color: skyblue;}
+	to{background-color: grey;}*/
+	0%{background-color: green;left: 0px;top: 0px;}
+	25%{background-color: red;left: 300px;top: 0px;}
+	50%{background-color: yellow;left: 300px;top: 300px;}
+	75%{background-color: hotpink;left: 0px;top: 200px}
+	100%{background-color: green;left: 0px;top: 0px;}
+
+}

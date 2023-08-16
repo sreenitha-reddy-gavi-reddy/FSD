@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Checkbox and JavaScript Validation</title>
+    <script>
+        function validateForm() {
+            var checkboxChecked = document.getElementById("myCheckbox").checked;
+            
+            if (!checkboxChecked) {
+                alert("Please check the checkbox to proceed!");
+                return false;
+            }
+            // Add more validation logic here if needed
+            
+            return true; // Form submission allowed
+        }
+    </script>
+</head>
+<body>
+    <h2>Form with Checkbox and JavaScript Validation</h2>
+    <form onsubmit="return validateForm()">
+        <label>
+            <input type="checkbox" id="myCheckbox">
+            I agree to the terms and conditions.
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

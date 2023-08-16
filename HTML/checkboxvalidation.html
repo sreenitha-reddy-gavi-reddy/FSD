@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkbox Validation Form</title>
+</head>
+<body>
+  <h2>Checkbox Validation Form</h2>
+  <form id="myForm">
+    <input type="checkbox" id="checkbox1" class="checkbox-group" name="checkboxGroup" value="option1">
+    <label for="checkbox1">Option 1</label><br>
+  
+    <input type="checkbox" id="checkbox2" class="checkbox-group" name="checkboxGroup" value="option2">
+    <label for="checkbox2">Option 2</label><br>
+  
+    <!-- Add more checkboxes here if needed -->
+  
+    <button type="button" onclick="validateForm()">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      const checkboxes = document.querySelectorAll('.checkbox-group');
+      let isChecked = false;
+
+      checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+          isChecked = true;
+          return; // Exit the loop early if at least one checkbox is checked
+        }
+      });
+
+      if (!isChecked) {
+        alert("Please select at least one option.");
+      } else {
+        document.getElementById('myForm').submit();
+      }
+    }
+  </script>
+</body>
+</html>
