@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collapse</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style type="">
+    	#a{
+			height: 700px;
+			width: 800px;
+			background-color: #EADBC8;
+		}
+		#b{
+			padding-top: 10px;
+			color:#102C57;
+		}
+		#d{
+			text-align: left;
+			padding-left: 10px;
+			color: #900C3F;
+		}
+		#c{
+			text-align: left;
+			padding-left: 10px;
+		}
+		button{
+			float: left;
+			margin-left: 10px;
+		}
+		.aa{
+			margin-top: 60px;
+			text-align: left;
+			padding-left: 10px;
+			color: #900C3F;
+		}
+		a{
+			float: left;
+			margin-left: 10px;
+			text-decoration: none;
+		}
+    </style>
+</head>
+<body>
+	<center>
+		<div id="a" class="container">
+			<h1 id="b">Bootstrap Collapse</h1>
+		    <h3 id="d">Basic Collapsible</h3>
+		    <p id="c">Collapsibles are useful when you want to hide and show large amount of content:</p>
+		    <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+		    <div id="demo" class="collapse">
+		    	Lorem ipsum dolor text....
+		    </div>
+		     <h3 class="aa">Collapsible Panel</h3>
+		     <p id="c">The following example shows a collapsible panel:</p>
+		    <div class="panel-group">
+		    	<div class="panel panel-default">
+		    		<div class="panel-heading">
+		    			<h4 class="panel-title">
+		    				<a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+		    			</h4>
+		    		</div>
+		    		<div id="collapse1" class="panel-collapse collapse">
+		    			<div class="panel-body">Panel Body</div>
+		    			<div class="panel-footer">Panel Footer</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <h3 class="aa">Collapsible Panel</h3>
+		    <p id="c">
+		    	<strong>Note:</strong> Use the data-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+		    </p>
+		    <h3 class="aa">Collapsible Panel</h3>
+		    <p id="c">
+		    	<strong>Note:</strong> Use the data-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+		    </p>
+		    <div class="panel-group">
+		    	<div class="panel panel-default">
+		    		<div class="panel-heading">
+		    			<h4 class="panel-title">
+		    				<a data-toggle="collapse" href="#collapse1">Click Here</a>
+		    			</h4>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+	</center>
+</body>
+</html>

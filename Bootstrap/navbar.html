@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="">
+		#a{
+			height: 700px;
+			width: 800px;
+			background-color: #A7ECEE;
+		}
+		#b{
+			padding-top: 10px;
+			color:#606C5D;
+		}
+		#d{
+			text-align: left;
+			padding-left: 10px;
+			color: #2B2A4C;
+		}
+		#c{
+			text-align: left;
+			padding-left: 10px;
+		}
+		li{
+			float: left;
+			list-style-type: none;
+			margin-right: 20px;
+		}
+		a{
+			text-decoration: none;
+		}
+		#f{
+			height: 100px;
+			width: 600px;
+			background-color: white;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div  id="a" class="container">
+			<h1 id="b">Navigation Bars</h1>
+			<h3 id="d">Basic Navbar</h3>
+			<p id="c">
+				With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.A standard navigation bar is created with the .navbar class, followed by a responsive collapsing class: .navbar-expand-xl|lg|md|sm (stacks the navbar vertically on extra large, large, medium or small screens).To add links inside the navbar, use a ul element with class="navbar-nav". Then add li elements with a .nav-item class followed by an a element with a .nav-link class:
+			</p>
+			<nav class="navbar navbar-expand-sm bg-light">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 3</a>
+					</li>
+				</ul>
+			</nav><br><br>
+			<h3 id="d">Colored Navbar</h3>
+			<p id="c">Use any of the .bg-color classes to change the background color of the navbar (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light).<br><br><strong>Tip:</strong> Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color.</p>
+			<div id="f" class="container">
+				<p id="c"><strong>Active/disabled state:</strong> Add the .active class to an <a> element to highlight the current link, or the .disabled class to indicate that the link is un-clickable.</p>
+			</div>
+		</div>
+	</center>
+</body>
+</html>

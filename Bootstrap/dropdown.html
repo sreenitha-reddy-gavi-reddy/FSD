@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<style type="">
+		#a{
+			height: 700px;
+			width: 800px;
+			background-color: #BAD7E9;
+		}
+		#b{
+			padding-top: 10px;
+			color:#7E1717 ;
+		}
+		#d{
+			text-align: left;
+			padding-left: 10px;
+			color: #159895;
+		}
+		#c{
+			text-align: left;
+			padding-left: 10px;
+		}
+		.e{
+			float: left;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id="a" class="container">
+			<h1 id="b">Bootstrap 4 Dropdowns</h1>
+			<h3 id="d">Basic Dropdown</h3>
+			<p id="c">A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list:</p>
+			<div class="dropdown e">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Dropdown button
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+					<a class="dropdown-item" href="#">Link 3</a>
+				</div>
+			</div><br><br>
+			<h3 id="d">Example Explained</h3>
+			<p id="c">The .dropdown class indicates a dropdown menu.To open the dropdown menu, use a button or a link with a class of mark>.dropdown-toggl</mark>e and the <mark> data-toggle="dropdown"</mark> attribute.Add the .dropdown-menu class to a div element to actually build the dropdown menu. Then add the<mark> .dropdown-item class</mark> to each element (links or buttons) inside the dropdown menu.</p>
+			<h3 id="d"> Dropdown Divider</h3>
+			<p id="c">The <mark>.dropdown-divider</mark> class is used to separate links inside the dropdown menu with a thin horizontal border:</p>
+			<h3 id="d">Disable and Active items</h3>
+			<p id="c">Highlight a specific dropdown item with the .active class (adds a blue background color).To disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a "no-parking-sign" icon on hover):</p>
+			<div class="dropdown e">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Dropdown button
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Normal</a>
+					<a class="dropdown-item active" href="#">Active</a>
+					<a class="dropdown-item disabled" href="#">Disabled</a>
+				</div>
+			</div>
+		</div>
+	</center>
+</body>
+</html>

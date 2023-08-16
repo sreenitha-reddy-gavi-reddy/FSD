@@ -1,0 +1,40 @@
+p{
+	color: red;
+	font-size: 30px;
+	border: 3px solid orange;
+}
+ul{
+	color: red;
+	font-size: 30px;
+}
+*{
+	font-size: 30px;
+	font-family: bold;
+}
+a[href]{
+	color: brown;
+	background-color: lavender;
+}*/
+a:link{
+	color: yellow;
+}
+a:visited{
+	color: brown;
+}
+a:hover{
+	color: red;
+	font-size: 50px;
+}
+a:active{
+	color: green;
+}
+div{
+	height: 100px;
+	width: 100px;
+	background-color: blue
+}
+div:hover{
+	height: 200px;
+	width: 200px;
+	background-color: green;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<h1>Javascript Introduction</h1>
+	<script>
+		/*var a=31;
+		var b=21;
+		var c=10;
+		alert(a);
+		console.log(b);*/
+		// var a=31;
+		// document.write("Sreenitha <br>");
+		// document.write("The a value :",a);
+		// var name='Deepu';
+		// document.write(name.length+"<br>");
+		// name +=' Sreenitha';
+		// document.write(name.length)
+		/*var name='sree';
+		name+=' deepu,';
+		name+='lalli';
+		document.write(name);*/
+		/*var a=10;
+		document.write(typeof(a));*/
+		/*var a= 31.21;
+		document.write(typeof(a)+"<br>");
+		var a='sree'
+		document.write(typeof(a));*/
+		/*var a;
+		a+='jdp';
+		document.write(a);*/
+		/*var a;
+		a='jdp'
+		document.write(a);*/
+		/*var a= 10;
+		var name= 'sim';
+		var g= true;
+		document.write(typeof(g));*/
+		/*var arr= ['Deepu bngrm',31,true];
+		document.write(typeof(arr));
+		document.write(arr);*/
+		/*var arr=['sreenitha','deepu bngrm','lalli'];
+		console.log(arr);
+		document.write(arr[1]);*/
+		/*var arr=['lalli','deepu','sreenitha','dhooda'];
+		document.write(arr[1]+" ");
+		document.write(arr[2]);*/
+		/*var obj ={
+			'name':'Sreenitha',
+			'roll_no':'21MH1A4210',
+			'branch':'AIML'
+		}*/
+		/*document.write(obj);*/
+		/*console.log(obj.name);
+		console.log(obj.roll_no);
+		console.log(obj.branch);*/
+		/*console.log(obj['name']);*/
+		/*console.log(obj);*/
+		var trainees =[{
+			'name':'Sreenitha',
+			'roll_no':'21MH1A4210',
+			'branch':'AIML'
+		},
+		{
+			'name':'deepu',
+			'roll_no':'21MH1A4254',
+			'branch':'AIML'
+		},
+		{
+			'name':'lalli',
+			'roll_no':'21MH1A4225',
+			'branch':'AIML'
+		},
+		{
+			'name':'deepika',
+			'roll_no':'21MH1A4265',
+			'branch':'AIML'
+		},
+		{
+			'name':'sushu',
+			'roll_no':'21MH1A4246',
+			'branch':'AIML'
+		}]
+		/*for (let item of trainees) {
+		console.log(item);
+		}*/ // Will display contents of the object inside the array
+		/*for( var i=0;i<trainees.length;i++){
+			console.log(i+1,trainees[i].name,trainees[i].roll_no,trainees[i].branch)
+		}*/
+		/*console.log(obj[0].name);
+		console.log(obj[1].name);
+		console.log(obj[0].roll_no);
+		console.log(obj[1].roll_no);
+		console.log(obj[0].branch);
+		console.log(obj[1].branch);*/
+		for (var i=0;i<trainees.length;i++) {
+			for(key in trainees[i]){
+				/*document.write(trainees[i])*/
+				document.write(trainees[i][key]+" ")
+
+			}
+			document.write("<br>");
+		}
+	</script>
+</body>
+<!-- <script type="" src="intro.js"></script> -->
+</html>

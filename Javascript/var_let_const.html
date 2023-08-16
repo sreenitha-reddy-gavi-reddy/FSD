@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable Types</title>
+</head>
+<body>
+	<h1>var,let,const</h1>
+	<script type="text/javascript">
+		var a=10;
+		/*document.write(a);*/
+		let b=20;
+		/*let b=30*///Redeclaration is not possible
+		b=30;//Reinitialization is possible
+		/*document.write(b);*/
+		//block level variable
+		{
+			let c=30;
+			/*document.write(c);*///can be used only inside a block
+		}
+		/*document.write(c);*/
+		const pi=3.14;
+		/*pi=31.22;*///Can't reassign the values to a constant variable 
+		document.write(pi);
+	</script>
+</body>
+</html>

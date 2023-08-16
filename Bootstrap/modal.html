@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style type="">
+    	#a{
+			height: 850px;
+			width: 800px;
+			background-color: #EADBC8;
+		}
+		#b{
+			padding-top: 10px;
+			color:#102C57;
+		}
+		#d{
+			text-align: left;
+			padding-left: 10px;
+			color: #900C3F;
+		}
+		#c{
+			text-align: left;
+			padding-left: 10px;
+		}
+		#f{
+			height: 160px;
+			width: 600px;
+			background-color: white;
+			padding-top: 50px;
+		}
+		#e{
+			text-align: left;
+			padding-left: 10px;
+			color: #900C3F;
+			margin-top: 60px;
+		}
+		button{
+			float: left;
+			margin-left: 10px;
+		}
+    </style>
+</head>
+<body>
+</body>
+<center>
+	<div id="a" class="container">
+		<h1 id="b">Bootstrap Modal Plugin</h1>
+		<h3 id="d">Modal Plugin</h3>
+		<p id="c">
+			The Modal plugin is a dialog box/popup window that is displayed on top of the current page:
+		</p>
+		<div id="f"  class="container">
+			<p id="c">
+				<strong>Tip:</strong> Plugins can be included individually (using Bootstrap's individual "modal.js" file), or all at once (using "bootstrap.js" or "bootstrap.min.js").
+			</p>
+		</div>
+		<h3 id="d">How To Create a Modal</h3>
+		<p id="c">
+			The following example shows how to create a basic modal:
+		</p><br>
+			<h3 id="d">Modal Example</h3>
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<div class="modal-body">
+							<p id="c">Some text in the modal.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3 id="e">The "Trigger" part:</h3>
+			<p id="c">To trigger the modal window, you need to use a button or a link.<br><br>Then include the two data-* attributes:</p>
+			<h3 id="e">The "Modal" part:</h3>
+			<p id="c">To trigger the modal window, you need to use a button or a link.<br><br>Then include the two data-* attributes:</p>
+	</div>
+</center>
+</html>

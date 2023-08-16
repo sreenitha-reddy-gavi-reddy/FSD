@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip</title>
+	<style type="">
+		#a{
+			height: 550px;
+			width: 800px;
+			background-color: #F8E8EE;
+		}
+		#b{
+			padding-top: 10px;
+			color: #0EA293;
+		}
+		#d{
+			text-align: left;
+			padding-left: 10px;
+			color: #7E1717;
+		}
+		#c{
+			text-align: left;
+			padding-left: 10px;
+		}
+		a{
+			float: left;
+			margin-left: 10px;
+		}
+		#f{
+			height: 150px;
+			width: 600px;
+			background-color: #FFEEBB;
+			margin-top: 20px;
+		}
+		#f1{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id="a" class="container">
+			<h1 id="b">Bootstrap Tooltip Plugin</h1>
+			<h3 id="d">The Tooltip Plugin:</h3>
+			<p id="c">The Tooltip plugin is small pop-up box that appears when the user moves the mouse pointer over an element:</p>
+			<h3 id="d">How To Create a Tooltip:</h3>
+			<p id="c">To create a tooltip, add the <mark>data-toggle="tooltip"</mark> attribute to an element.<br>Use the title attribute to specify the text that should be displayed inside the tooltip:</p>
+			<a href="#" data-toggle="tooltip" title="Hooray!" id="e">Hover over me</a><br>
+			<p id="c"><strong>Note:</strong> Tooltips must be initialized with jQuery: select the specified element and call the <mark>tooltip()</mark> method.</p>
+			<a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a><br>
+            <div id="f" class="container">
+            	<p id="f1"><strong>Tip:</strong> You can also use the data-placement attribute with a value of "auto", which will let the browser decide the position of the tooltip. For example, if the value is "auto left", the tooltip will display on the left side when possible, otherwise on the right.</p>
+            </div>
+		</div>
+	</center>
+</body>
+</html>

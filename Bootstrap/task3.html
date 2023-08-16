@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="task1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+* {
+  box-sizing: border-box;
+}
+.container{
+  border: 1px solid black;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 10px;
+}
+#t2{
+  text-align: left;
+  color: skyblue;
+  font-size: 40px;
+}
+#t3{
+  text-align: left;
+  color: orange;
+  font-size: 40px;
+}
+#t4{
+  text-align: left;
+  color: green;
+  font-size: 40px;
+}
+#t5{
+  text-align: left;
+  color: tomato;
+  font-size: 40px;
+}
+#t6{
+  text-align: right;
+  color: tomato;
+  font-size: 40px;
+}
+#t7{
+  text-align: right;
+  color: green;
+  font-size: 40px;
+}
+#t8{
+  text-align: right;
+  color: orange;
+  font-size: 40px;
+}
+#t9{
+  text-align: right;
+  color: skyblue;
+  font-size: 40px;
+}
+#t10{
+  text-align: left;
+  color: skyblue;
+  font-size: 40px;
+}
+#t11{
+  text-align: left;
+  color: orange;
+  font-size: 40px;
+}
+#t12{
+  text-align: left;
+  color: green;
+  font-size: 40px;
+}
+#t13{
+  text-align: left;
+  color: tomato;
+  font-size: 40px;
+}
+.aa{
+  margin-top: 5px;
+}
+#bb{
+  text-align: right;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="a">MINIMAL STATISTIC CARDS</h2>
+        <span id="a">Statistics on minimal cards</span>
+      </div>
+    </div>
+    <div class="row bg-info">
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-pencil" id="t2"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <i class="fa-regular fa-message" id="t3"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-chart-line" id="t4"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+         <i class="fa-solid fa-location-dot" id="t5"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-info">
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-rocket" id="t6"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-user" id="t7"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-chart-pie" id="t8"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+         <i class="fa-solid fa-dharmachakra" id="t9"></i>
+        </div>
+      </div>
+  </div>
+  <div class="row bg-info">
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-book-open" id="t10"></i>
+          <div class="progress aa">
+            <div class="progress-bar bg-info" style="width:75%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-comments" id="t11"></i>
+          <div class="progress aa">
+            <div class="progress-bar bg-warning" style="width:75%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <i class="fa-solid fa-mug-hot" id="t12"></i>
+          <div class="progress aa">
+            <div class="progress-bar bg-success" style="width:75%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+        <i class="fa-solid fa-signs-post" id="t13"></i>
+         <div class="progress aa">
+            <div class="progress-bar bg-danger" style="width:75%"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

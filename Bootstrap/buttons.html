@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buttons</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="">
+		#a{
+			height: 800px;
+			width: 800px;
+			background-color: #C2DEDC;
+		}
+		#b{
+			color: #27374D;
+			padding-top: 20px;
+		}
+		#d{
+			text-align: left;
+			padding-left: 10px;
+			color: #7E1717;
+		}
+		#c{
+			text-align: left;
+			padding-left: 10px;
+		}
+		#e{
+			height: 60px;
+			width: 600px;
+			background-color: white;
+			float: left;
+			margin-left: 10px;
+		}
+		button[type="button"]{
+			margin-top: 7px;
+		}
+		#f{
+			color: #F45050;
+			padding-left: 10px;
+			text-align: left;
+		}
+		.g{
+			padding-left: 260px;
+			padding-right: 260px;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id="a">
+			<h1 id="b">Bootstrap Buttons</h1>
+			<h3 id="d">Button Styles:</h3>
+			<p id="c">Bootstrap provides different styles of buttons:</p>
+			<div id="e">
+				<button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-link">Link</button>
+			</div><br><br><br>
+			<p id="c">To achieve the button styles above, Bootstrap has the following classes:</p>
+			<ul>
+				<li id=f>.btn</li>
+				<li id=f>.btn-default</li>
+				<li id=f>.btn-primary</li>
+				<li id=f>.btn-success</li>
+				<li id=f>.btn-info</li>
+				<li id=f>.btn-warning</li>
+				<li id=f>.btn-danger</li>
+				<li id=f>.btn-link</li>
+			</ul>
+			<h3 id="d">Button Sizes</h3>
+			<div id="e">
+				<button type="button" class="btn btn-primary btn-lg">Large</button>
+                <button type="button" class="btn btn-primary">Normal</button>
+                <button type="button" class="btn btn-primary btn-sm">Small</button>
+                <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+			</div><br><br><br>
+			<h3 id="d">Block Level Buttons</h3>
+			<p id="c">A block level button spans the entire width of the parent element.<br>Add class <mark>.btn-block</mark> to create a block level button:</p>
+			<button type="button" class="btn btn-primary btn-block g">Button 1</button>
+		</div>
+	</center>
+</body>
+</html>
