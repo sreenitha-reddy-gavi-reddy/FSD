@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM TABLE</title>
+</head>
+<body>
+	<table border="">
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let d=document.getElementsByTagName('td');
+		console.log(d);
+		for(var i=0;i<d.length;i++){
+			d[i].innerText=d.length-i;
+		}
+	</script>
+</body>
+</html>

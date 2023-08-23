@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//function with no parameters
+		function test(){
+			alert("Testing");
+		}
+		// test()
+		//function with one parameter
+		function getname(s){
+			document.write(s);
+		}
+		//getname('sreenitha');
+		//function with default parametrs
+		function getname(s='sreenitha'){
+			document.write(s);
+		}
+		//getname();
+		//var a=prompt("Scan your id");
+		function id(rollno){
+			document.write(rollno);
+		}
+		//id(a);
+		//function with two parameters
+		function sum(a,b){
+			document.write(a+b);
+		}
+		//sum(31,22);
+		function sum(a,b){
+			document.write(a+b);
+		}
+		//sum(31);//return NaN
+		function sum(a,b=0){
+			document.write(a+b);
+		}
+		//sum(31);//return default sum
+		//using return statement
+		var s= function add(a,b){
+			return a+b
+		}
+		//document.write(s(3,2))
+		//anonymous function is function without having function name
+		var s= function(a,b){
+			return a*b
+		}
+		//document.write(s(3,2))
+		//var s=prompt("enter a value");
+		var s= function(a){
+			return a*a*a;
+		}
+		//document.write(s);
+		//arrow function--->no need to use any function
+		add=(a,b) =>
+		{
+			document.write(a+b);
+		}
+		//add(2,3);
+		// arrow function with no arguments
+		// test=() or
+		test=_ =>
+		{
+			document.write("sreenitha");
+		}
+		//test();
+		//setTimeoUt function
+		/*setTimeout(function(){
+			document.write("enables after 5 secs");
+		},5000)*/
+		//callback function
+		setTimeout(test1,2000)
+		function test1(){
+			document.write("enables after 2 secs");
+		}
+	</script>
+</body>
+</html>

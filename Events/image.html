@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image</title>
+	<style type="text/css">
+		#a{
+			height: 500px;
+			width: 850px;
+			border: 1px solid black;
+		}
+		#a1{
+			height: 400px;
+			width: 600px;
+			border: 1px solid black;
+			margin: 10px;
+			margin-top: 30px;
+			float: left;
+		}
+		#b1{
+			height: 300px;
+			width: 150px;
+			border: 1px solid black;
+			margin: 10px;
+			margin-top: 35px;
+			margin-left: 20px;
+			float: left;
+		}
+		#b2{
+			height: 300px;
+			width: 150px;
+			border: 1px solid black;
+			margin: 10px;
+			margin-top: 35px;
+			margin-left: 20px;
+			float: left;
+		}
+		#b3{
+			height: 300px;
+			width: 150px;
+			border: 1px solid black;
+			margin: 10px;
+			margin-top: 35px;
+			float: left;
+		}
+		img{
+			height: 300px;
+			width: 150px;
+		}
+		#a2{
+			height: 400px;
+			width: 150px;
+			border: 1px solid black;
+			margin: 10px;
+			margin-top:30px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id="a">
+			<div id="a1">
+				<div id="b1">
+					<img src="5.jpg" onclick="getimage('5.jpg')">
+				</div>
+				<div id="b2">
+					<img src="4.jpg" onclick="getimage('4.jpg')">
+				</div>
+				<div id="b3">
+					<img src="3.jpg" onclick="getimage('3.jpg')">
+				</div>
+			</div>
+			<div id="a2"></div>
+		</div>
+		<script type="text/javascript">
+			function getimage(img_path){
+				document.getElementById('a2').innerHTML="<img src ='"+img_path+"' style='width:150px;height:400px;' />";
+			}
+		</script>
+	</center>
+</body>
+</html>

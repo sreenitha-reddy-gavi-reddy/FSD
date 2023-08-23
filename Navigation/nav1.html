@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Navigation</title>
+</head>
+<body>
+	<h1 id="a">Navigation</h1>
+	<p id="b"></p>
+	<script type="text/javascript">
+		// accesing text node value by the node's innerHTML property
+		/*var d=document.getElementById('a').innerHTML;
+		document.write(d);*/
+		//1st way-->accessing the nodeValue of the first child into second child:
+		//document.getElementById('b').innerHTML=document.getElementById('a').firstChild.nodeValue;
+		
+		//2 nd way-->accessing first child node value into second child node:
+		document.getElementById('b').innerHTML=document.getElementById('a').childNodes[0].nodeValue;
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Using DOM Methods</title>
+</head>
+<body>
+	<table border="" id="table">
+		<thead>
+			<tr>
+				<th>course name</th>
+			    <th>course number</th>
+			    <th>course fees</th>
+			    <th>place</th>
+		    </tr>
+		</thead>
+		<tbody id="tbody"></tbody>
+	</table>
+	<script type="text/javascript">
+		var trainees=[
+		{
+			"coursename":"html";
+			"coursenumber":23423;
+			"coursefees":235;
+			"place":"dwp"
+		}
+		{
+			"coursename":"html";
+			"coursenumber":23423;
+			"coursefees":235;
+			"place":"dwp"
+		}
+		{
+			"coursename":"html";
+			"coursenumber":23423;
+			"coursefees":235;
+			"place":"dwp"
+		}]
+		for(var i=1;i<trainees.length-1;i++)
+		{
+			let tr=document.createElement('tr');
+			let td1=document.createElement('td');
+			let td2=document.createElement('td');
+			let td3=document.createElement('td');
+			let td4=document.createElement('td');
+			td1.innerText = trainees[i].coursename;
+			td1.innerText = trainees[i].coursenumber;
+			td1.innerText = trainees[i].coursefees;
+			td1.innerText = trainees[i].place;
+			tr.append(td1);
+			tr.append(td2);
+			tr.append(td3);
+			tr.append(td4);
+			document.getElementById('tbodyid').append(tr);
+		}
+		
+
+	</script>
+</body>
+</html>

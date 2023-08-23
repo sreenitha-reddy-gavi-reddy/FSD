@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slide</title>
+</head>
+<body>
+	<button onclick="nextslide()">Inc</button>
+	<button onclick="prevslide()">Dec</button>
+	<p>SlideShow</p>
+	<p id="output_id"></p>
+	<script type="text/javascript">
+		var i=1;
+		function nextslide(){
+			if(i<6){
+				var res=i++;
+				document.getElementById('output_id').innerHTML="<img src=' "+res+".jpg' style='width:200px;height:200px;'/>"
+			}
+		}
+		function prevslide(){
+			if(i>0){
+				var res=i--;
+				if(res!=6){
+					document.getElementById('output_id').innerHTML="<img src=' "+res+".jpg' style='width:200px;height:200px;'/>"
+				}
+			}
+		}
+	</script>
+</body>
+</html>

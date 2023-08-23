@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+</head>
+<body>
+	<!-- inline event hander -->
+	<!-- event handlers -->
+	<!-- <button onclick="test()">Click Here</button> -->
+	<!-- <button id="btn_id">Click Here</button> -->
+	<script type="text/javascript">
+		//1 st way
+		/*function test(){
+			alert("Testing....");
+			document.body.style.background ="aqua";
+		}*/
+		//2 nd way
+		/*let btn=document.getElementById('btn_id');
+		btn.onclick=function(){
+			alert("hi");
+			document.body.style.background ="pink";
+		}*/
+		//3 rd way
+		/*let btn=document.getElementById('btn_id');
+		btn.addEventListener('click',test);
+		function test(){
+			alert("Testing....");
+			document.body.style.background ='lightgreen';
+		}*/
+		// 4 th way anonymous function
+		/*let btn=document.getElementById('btn_id');
+		btn.addEventListener('click',function(){
+			alert("Testing....");
+			document.body.style.background ='lightgreen';
+		});*/
+	</script>
+</body>
+</html>

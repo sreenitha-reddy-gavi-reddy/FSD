@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MouseEvents</title>
+</head>
+<body>
+	<button id="btn_id">Click Here</button>
+	<script type="text/javascript">
+		let btn=document.getElementById('btn_id');
+		//btn.onclick=sample;
+		//btn.ondblclick=sample;
+		//btn.onmouseover=sample;
+		//btn.onmouseout=sample;
+		btn.onmousemove=sample;
+		function sample(){
+			document.body.style.background='lightgreen';
+		}
+	</script>
+</body>
+</html>

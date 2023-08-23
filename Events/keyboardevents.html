@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KeyBoard Listener</title>
+</head>
+<body>
+	<h1>KeyboardEvents</h1>
+	<ul>
+		<li>Key doown</li>
+		<li>Key up</li>
+		<li>Key press</li>
+	</ul>
+	<hr>
+	<form>
+		<label>Key down</label>
+		<input type="text" name="" value="" onkeydown="sample(this.value)">
+		<br>
+		<span id="sp_id"></span>
+		<br>
+		<br>
+		<label>Key up</label>
+		<input type="text" name="" value="" onkeyup="sample(this.value)">
+		<br>
+		<br>
+		<label>Key press</label>
+		<input type="text" name="" value="" onkeypress="sample(this.value)">
+	</form>
+	<script type="text/javascript">
+		function sample(color_value){
+			document.getElementById('sp_id').innerText = color_value;
+			document.body.style.background = color_value;
+		}
+	</script>
+</body>
+</html>

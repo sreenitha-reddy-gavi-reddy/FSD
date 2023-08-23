@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INC and DEC</title>
+</head>
+<body>
+	<button onclick="incrby1()">Inc</button>
+	<button onclick="decrby1()">Dec</button>
+	<p>Output</p>
+	<p id="output_id"></p>
+	<script type="text/javascript">
+		var i=1;
+		function incrby1(){
+			if(i<6){
+				document.getElementById('output_id').innerText=i++;
+			}
+		}
+		var i=5;
+		function decrby1(){
+			if(i>=0){
+				document.getElementById('output_id').innerText=i--;
+			}
+		}
+	</script>
+</body>
+</html>

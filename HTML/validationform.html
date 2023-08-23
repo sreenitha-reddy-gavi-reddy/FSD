@@ -26,6 +26,18 @@
     <input type="password" id="confirmPassword" name="confirmPassword">
 
     <br>
+    <input type="checkbox" id="checkbox1" class="checkbox-group" name="checkboxGroup" value="option1">
+    <label for="checkbox1">Option 1</label><br>
+  
+    <input type="checkbox" id="checkbox2" class="checkbox-group" name="checkboxGroup" value="option2">
+    <label for="checkbox2">Option 2</label><br>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
 
     <input type="submit" value="Register">
 </form>
@@ -39,7 +51,7 @@
 
         // Simple name validation: should not be empty and at least 3 characters long
         if (name.length < 3) {
-            alert("Name must be at least 3 characters long.");
+            alert("Name must be filled.");
             return false;
         }
 
@@ -60,6 +72,25 @@
             alert("Passwords do not match.");
             return false;
         }
+        const checkboxes = document.querySelectorAll('.checkbox-group');
+      let isChecked = false;
+
+      checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+          isChecked = true;
+          return; // Exit the loop early if at least one checkbox is checked
+        }
+      });
+
+      if (!isChecked) {
+        alert("Please select at least one option.");
+      } else {
+        document.getElementById('myForm').submit();
+      }
+      if (!gender) {
+        alert("Please select a gender.");
+        return false;
+    }
 
         // If all validations pass, the form will be submitted
         return true;

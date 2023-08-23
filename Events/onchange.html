@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onchange</title>
+</head>
+<body>
+	<center>
+		<select onchange="getcollege(this.value)" style="height: 30px;width: 200px;">
+			<option>Select College</option>
+			<option value="AEC">AEC</option>
+			<option value="ACET">ACET</option>
+			<option value="ACOE">ACOE</option>
+		</select>
+		<p id="p_id"></p>
+	</center>
+	<script type="text/javascript">
+		function getcollege(college_name){
+			document.getElementById('p_id').innerText=college_name;
+		}
+	</script>
+</body>
+</html>

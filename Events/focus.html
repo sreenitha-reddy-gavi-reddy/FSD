@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus Events</title>
+</head>
+<body>
+	<h4>Focus Events</h4>
+	<ul>
+		<li>Focus</li>
+		<li>blur</li>
+		<li>Focus in</li>
+		<li>Focus out</li>
+	</ul>
+	<hr>
+	<form>
+		<label>Focus</label>
+		<input type="text" name="" onfocus="sample(this,'aqua')">
+		<label>Blur</label>
+		<input type="text" name="" onblur="sample(this,'red')">
+	</form>
+	<script type="text/javascript">
+		function sample(current_element,color_value){
+			current_element.style.background=color_value;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Change on Hover</title>
+</head>
+<body>
+    <center>
+        <img id="image1" src="empty.jpg" onmouseover="changeImage()" onmouseout="resetImage()" alt="Image 1" style="height: 300px;width: 500px;">
+        <img id="image2" src="ballon.jpg" style="display: none;height: 300px;width: 500px;" alt="Image 2">
+    </center>
+    <script>
+        function changeImage() {
+            document.getElementById("image1").style.display = "none";
+            document.getElementById("image2").style.display = "block";
+        }
+
+        function resetImage() {
+            document.getElementById("image1").style.display = "block";
+            document.getElementById("image2").style.display = "none";
+        }
+    </script>
+</body>
+</html>
